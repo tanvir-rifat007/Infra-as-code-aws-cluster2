@@ -1,3 +1,8 @@
+data "tfe_outputs" "fem-eci-aws-network2" {
+  workspace = "fem-eci-aws-network2"
+}
+
+
 data "aws_iam_policy_document" "assume_role" {
   statement {
     actions = ["sts:AssumeRole"]
