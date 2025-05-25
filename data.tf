@@ -1,5 +1,14 @@
 
+data "terraform_remote_state" "network" {
+  backend = "remote"
 
+  config = {
+    organization = "tanvir-rifat"
+    workspaces = {
+      name = "fem-eci-aws-network2"
+    }
+  }
+}
 
 
 data "aws_iam_policy_document" "assume_role" {
