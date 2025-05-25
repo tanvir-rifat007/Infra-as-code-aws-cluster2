@@ -1,6 +1,4 @@
-data "tfe_outputs" "fem-eci-aws-network2" {
-  workspace = "fem-eci-aws-network2"
-}
+
 
 
 
